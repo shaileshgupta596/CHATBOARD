@@ -1,0 +1,237 @@
+body{
+		font-family: "bilbo";
+	}
+
+			.upper_bar{
+	width:100%;
+	height:75px;
+	background-color: #3399ff;
+	position: absolute;
+	border-radius: 5px;
+			box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.1);
+}
+.chatboard_title{
+	left:45%;
+	top:20px;
+	position: absolute;
+	color:white;
+	font-size:40px;
+	font-family: bilbo;
+}
+
+		.login_container{
+			top:20%;
+			position:absolute;
+			width: 450px;
+			height: 500px;
+			left:33%;
+			border-radius: 5px;
+			box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.1);
+		}
+
+		.top_animation_container{
+			width:100%;height: 10px;
+			
+
+		}
+		.bottom_animation_container{
+			width:100%;height: 10px;bottom: 0px;position:absolute;
+		}
+		#animation1,#animation2{
+			width:100px;
+			height: 2px;
+
+			position: relative;
+			animation-name: animation_1;
+			animation-duration: 1s;
+			animation-iteration-count: 2;
+			animation-play-state: paused;
+			
+		}
+
+@keyframes animation_1{
+	0%{background-color: white;left:0px;}
+	50%{background-color: #3399ff;left:100px;width: 100px;box-shadow: 0px 3px 10px 0px rgb(0,0,0,0.9)}
+
+	100%{background-color: #3399ff;left:200px;width:250px;}
+}		
+		.ChatBoard{
+			position:absolute;
+			left:33%;
+			top:10%;
+			width: 120px;
+			height:50px;
+			/*background-color:  #3399ff;*/
+			
+			color: #3399ff;
+			font-size: 40px;
+			font-weight: bold;
+			font-style:roboto mono;
+			animation-name:chatboard_title;
+			animation-duration: 2s;
+			animation-iteration-count: 1;
+
+		}
+		@keyframes chatboard_title{
+			0%{top:0px;}
+			10%{top:20%;color:red;transform: rotate(20deg);}
+			30%{top:10%;}
+			50%{top:20%;color:yellow;transform: rotate(-25deg);}
+			70%{top:15%;}
+			85%{top:20%;}
+			100%{top:10%;}
+
+
+		}
+
+		.login_title{
+			color:#3399ff;
+			top:20%;
+			left:45%;
+			position: absolute;
+			font-size:25px;
+			text-decoration: underline;
+			animation:logintitle;
+			animation-duration: 3s;
+		}
+		@keyframes logintitle{
+			0%{top:100%;}
+			100%{top:20%;}
+			
+		}
+
+		#userid_container{
+			position:absolute;
+			width: 300px;
+			height: 75px;
+			top:150px;
+			left:15%;
+			font-family: 'bilbo';
+			font-size: 20;
+			border-radius: 3px;
+			color:#3399ff;
+
+			box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.1);
+			animation:animation1 0.25s paused;
+		}
+		 @keyframes animation1{
+    	
+    	100%{left:-300px;display:none;}
+ 		 }
+
+
+		#userid{
+			width:300px;
+			height:75px;
+			font-size: 20px;
+			font-family: 'bilbo';
+			border-radius: 5px;
+			outline: none;
+			border:none;
+
+			
+		}
+		#userid:focus{
+			border:inset;
+			border-color:#3399ff;
+		}
+		
+		label{
+			color:#3399ff;
+			font-size: 25px;
+			position: absolute;
+			top:10px;
+			transition: 0.5s;
+			pointer-events: none;
+		}
+		 input:focus ~label{
+			top:-20px;
+			
+		}
+
+		
+
+		#password_login_container{
+			position:absolute;
+			width: 300px;
+			height: 75px;
+			top:150px;
+			left:15%;
+			box-shadow: 0px 0px 2px 2px rgb(0,0,0,0.1);
+			display: none;
+}
+		#password_box{
+			width:300px;
+			height:75px;
+			font-size: 20px;
+			font-family: 'bilbo';
+			border-radius: 5px;
+			border:none;
+			outline: none;
+		}
+		#password_box:focus{
+			border:inset;
+			border-color:#3399ff;
+		}
+		
+		#next_button{
+			position:absolute;
+			bottom:30%;
+			right:10%;
+			width: 75px;
+			height:40px;
+			background-color: #ff4d4d;
+			border-radius:3px;
+			border: none;
+			color:white;
+			font-size: 15px;
+			font-weight: bold;
+			font-family: 'bilbo';
+		}
+		#next_button:hover{
+			box-shadow: 0px 3px 13px 0px rgb(0,0,0,0.9);
+
+		}
+
+		#login_btn{
+			position:absolute;
+			bottom:-100px;
+			right:0px;
+			width: 75px;
+			height:40px;
+			background-color: #ff4d4d;
+			border-radius:3px;
+			border: none;
+			color:white;
+			font-size: 15;
+			font-weight: bold;
+			font-family: 'bilbo';
+		}
+
+		#login_btn:hover{
+			box-shadow: 0px 3px 13px 0px rgb(0,0,0,0.9);
+
+		}
+		#back_btn{
+			position:absolute;
+			bottom:-100px;
+			left:0px;
+			width: 75px;
+			height:40px;
+			background-color: #3399ff;
+			border-radius:3px;
+			border: none;
+			color:white;
+			font-size: 15;
+			font-weight: bold;
+			font-family: 'bilbo';
+		}
+
+		.newacc_forpass{
+			width:150px;
+			height:150px;
+			position: absolute;
+			bottom: 0%;
+			font-size: 20;
+			color:#3399ff;
+		}
